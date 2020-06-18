@@ -1,0 +1,79 @@
+.our-team18{
+    position: relative;
+    text-align:center;
+    overflow: hidden;
+    box-shadow:0 0 5px #808080;
+}
+.our-team18 img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.40s linear 0s;
+}
+.our-team18:hover img{
+    transform: scale(1.3);
+    transition:transform 3s linear 0s;
+}
+.our-team18 .team-content18{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.8);
+    transition: all 0.50s ease-in-out;
+}
+.our-team18:hover .team-content18{
+    opacity: 1;
+}
+.our-team18 .team-prof18{
+    margin:20px 0 20px 0;
+    position:relative;
+    top:13%;
+}
+.our-team18 .team-prof18 a{
+    color:#6a6060;
+    font-size:18px;
+    font-weight: bold;
+    letter-spacing:1px;
+    text-transform: uppercase;
+}
+.our-team18 .team-prof18 a:hover{
+    color:#f15277;
+    text-decoration:none;
+}
+.our-team18 .team-prof18 small{
+    color:#f15277;
+    display: block;
+    font-size:13px;
+    margin-top:10px;
+    text-transform: uppercase;
+}
+.our-team18 .social-link18{
+    padding:0;
+    margin:0;
+    position:relative;
+    top:13%;
+}
+.our-team18 .social-link18 li{
+    list-style:none;
+    margin-right:5px;
+    display:inline-block;
+}
+.our-team18 .social-link18 li a{
+    width: 35px;
+    height: 35px;
+    line-height:35px;
+    border-radius:50%;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.3);
+}
+.our-team18 .social-link18 li a:hover{
+    background:#333;
+    text-decoration:none;
+}
+@media only screen and (max-width: 990px){
+    .our-team18{  margin-bottom:20px; }
+}
