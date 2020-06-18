@@ -1,0 +1,97 @@
+.box43{
+    background: #212121;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    box43-shadow: 0 0 5px #555;
+    transition: all 0.55s ease;
+}
+.box43 img{
+    width: 100%;
+    height: auto;
+    transition: all 0.55s ease;
+}
+.box43:hover img{
+    opacity: 0.5;
+}
+.box43 .box43-content{
+    padding: 5px 10px 10px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+.box43 .box43-content:before,
+.box43 .box43-content:after{
+    content: "";
+    width: 767px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+}
+.box43 .box43-content:before{
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.box43 .box43-content:after{
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.box43 .box43-content-inner:before,
+.box43 .box43-content-inner:after{
+    content: "";
+    width: 2px;
+    height: 767px;
+    position: absolute;
+    background: #fff;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+}
+.box43 .box43-content-inner:before{
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.box43 .box43-content-inner:after{
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.box43:hover .box43-content:before,
+.box43:hover .box43-content:after,
+.box43:hover .box43-content-inner:before,
+.box43:hover .box43-content-inner:after{
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.box43:hover .box43-content:before,
+.box43:hover .box43-content:after{
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.box43 .title43{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+.box43 .post43{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #434343;
+    padding: 5px 10px;
+    background: #fff;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:990px){
+    .box43{ margin-bottom: 30px; }
+}

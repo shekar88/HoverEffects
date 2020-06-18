@@ -1,0 +1,217 @@
+.box42{
+    overflow: hidden;
+    position: relative;
+}
+.box42 img{
+    width: 100%;
+    height: auto;
+}
+.box42 .box42-icon42{
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.6);
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.box42:hover .box42-icon42{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.box42 .icon42{
+    font-size: 30px;
+    color: #000;
+    line-height: 60px;
+    text-align: center;
+    opacity: 1;
+    -moz-transition: all 0.01s linear 0.2s;
+    -webkit-transition: all 0.01s linear 0.2s;
+    -o-transition: all 0.01s linear 0.2s;
+    -ms-transition: all 0.01s linear 0.2s;
+    transition: all 0.01s linear 0.2s;
+}
+.box42:hover .icon42{
+    opacity: 0;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.box42 .box42-inner{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    -moz-transition: all 0.01s linear 0s;
+    -webkit-transition: all 0.01s linear 0s;
+    -o-transition: all 0.01s linear 0s;
+    -ms-transition: all 0.01s linear 0s;
+    transition: all 0.01s linear 0s;
+}
+.box42:hover .box42-inner{
+    opacity: 1;
+}
+.box42 .border{
+    background: #000;
+    position: absolute;
+    -moz-transition: all 0.4s linear 0s;
+    -o-transition: all 0.4s linear 0s;
+    -ms-transition: all 0.4s linear 0s;
+    -webkit-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
+}
+.box42:hover .border-top,
+.box42:hover .border-left,
+.box42:hover .border-bottom,
+.box42:hover .border-right{
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.box42 .border-top{
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 2px;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+.box42 .border-left{
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    -moz-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+.box42 .border-bottom{
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 2px;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+.box42 .border-right{
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    -moz-transform-origin: right top;
+    -o-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+.box42 .box42-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.box42:hover .box42-content{
+    opacity: 1;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition-delay: 0.65s;
+    -ms-transition-delay: 0.65s;
+    -webkit-transition-delay: 0.65s;
+    -o-transition-delay: 0.65s;
+    transition-delay: 0.65s;
+}
+.box42 .title42{
+    width: 80%;
+    margin: 20% auto 0;
+    background: rgba(0,0,0,0.7);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 6px 0;
+    position: relative;
+}
+.box42 .title42:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid rgba(0,0,0,0.7);
+    position: absolute;
+    top: 100%;
+    left: 42%;
+}
+.box42 .description42{
+    width: 80%;
+    margin: 40px auto 0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 10px;
+    background: rgba(0,0,0,0.8);
+}
+.box42 .read-more42{
+    display: inline-block;
+    margin: 30px auto 0;
+    padding: 7px 20px;
+    background: #1b8070;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    box42-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.2);
+}
+@media only screen and (max-width:990px){
+    .box42{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:360px){
+    .box42 .title42{ margin: 10% auto 0; }
+}
+@media only screen and (max-width:359px){
+    .box42 .description42{ margin: 25px auto 0; }
+    .box42 .read-more42{ margin: 15px auto 0; }
+}

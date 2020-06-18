@@ -1,0 +1,129 @@
+.box31{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.box31 img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.6);
+    transition: all 0.3s ease 0s;
+}
+.box31:hover img{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}
+.box31 .box31-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.2s ease 0s;
+}
+.box31:before,
+.box31:after,
+.box31 .box31-content:before,
+.box31 .box31-content:after{
+    content: "";
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.7),transparent,rgba(0,0,0,0.7),rgba(0,0,0,0.9));
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.box31:before{ transform: translateX(100%); }
+.box31:after{
+    height: 25.1%;
+    top: 25%;
+    transform: translateX(-100%);
+    transition-delay: 0.05s;
+}
+.box31 .box31-content:before{
+    top: 50%;
+    transform: translateX(100%);
+    transition-delay: 0.1s;
+}
+.box31 .box31-content:after{
+    top: 75%;
+    transform: translateX(-100%);
+    transition-delay: 0.15s;
+}
+.box31:hover:before,
+.box31:hover:after,
+.box31:hover .box31-content:before,
+.box31:hover .box31-content:after{ transform: translateX(0); }
+.box31 .inner-content31{
+    padding: 7px 0;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+}
+.box31 .title31{
+    font-size: 22px;
+    font-weight: 700;
+    color: #faac01;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 3px 0;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.4s ease 0s;
+}
+.box31 .post31{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s ease 0s;
+}
+.box31:hover .title31,
+.box31:hover .post31{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.box31 .icon31{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: -200px;
+    left: 10px;
+    z-index: 2;
+    transition: all 0.4s ease 0.2s;
+}
+.box31:hover .icon31{ top: 15px; }
+.box31 .icon31 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #faac01;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.box31 .icon31 li a:hover{
+    text-decoration: none;
+    border-radius: 30%;
+    background: #fff;
+    color: #faac01;
+}
+@media only screen and (max-width:990px){
+    .box31{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:479px){
+    .box31 .title31{ font-size: 18px }
+}

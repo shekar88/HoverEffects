@@ -1,0 +1,130 @@
+.box25{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.box25:before,
+.box25:after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+    background-repeat: repeat;
+    background-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.box25:after{
+    left: auto;
+    right: 50%;
+}
+.box25:hover:before{
+    left: 0;
+    opacity: 1;
+}
+.box25:hover:after{
+    right: 0;
+    opacity: 1;
+}
+.box25 img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+}
+.box25:hover img{
+    transform: scale(1.2);
+    filter: brightness(200%);
+}
+.box25 .box25-content{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left,rgba(0,0,0,1),rgba(0,0,0,0.3),transparent,rgba(0,0,0,0.3),rgba(0,0,0,1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s ease 0s;
+}
+.box25:hover .box25-content{ opacity: 1; }
+.box25 .inner-content25{
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+}
+.box25 .title25{
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    color: #f94977;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 3px 0;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.6s ease 0s;
+}
+.box25 .post25{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #fff;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.box25:hover .title25,
+.box25:hover .post25{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.box25 .icon25{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+}
+.box25:hover .icon25{ top: 70%; }
+.box25 .icon25 li{
+    display: inline-block;
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+.box25 .icon25 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #f94977;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.box25 .icon25 li a:hover{
+    text-decoration: none;
+    background: #fff;
+    box25-shadow: 0 0 0 3px rgba(0,0,0,0.5) inset;
+    color: #f94977;
+}
+@media only screen and (max-width:990px){
+    .box25{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:479px){
+    .box25 .title25{ font-size: 20px; }
+}

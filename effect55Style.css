@@ -1,0 +1,62 @@
+.box55{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.box55 .box55-img{
+    position: relative;
+}
+.box55 .box55-img img{
+    width: 100%;
+    height: auto;
+}
+.box55 .box55-img:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.box55:hover .box55-img:before{
+    opacity: 1;
+}
+.box55 .link55{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+}
+.box55 .link55 a{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+    position: relative;
+    top:45%;
+    opacity:0;
+    font-size: 16px;
+    line-height: 40px;
+    margin-right: 5px;
+    display: inline-block;
+    transform: rotateZ(-360deg);
+    transition:all 0.3s ease 0s;
+}
+.box55 .link55 a:hover{
+    text-decoration: none;
+    color:#fff;
+    background: rgba(255,255,255,0.4);
+}
+.box55:hover .link55 a{
+    transform: rotateZ(0deg);
+    opacity:1;
+}
+@media only screen and (max-width: 990px){
+    .box55{
+        margin-bottom: 20px;
+    }
+}

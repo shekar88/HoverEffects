@@ -1,0 +1,77 @@
+.box54{
+    position: relative;
+    box54-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.box54 img{
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+    transition: all 0.3s ease 0s;
+}
+.box54:hover img{
+    transform: translateX(10px);
+}
+.box54 .box54-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background: #fff;
+    transform-origin: left center 0;
+    transform: perspective(400px) rotateY(90deg);
+    transition: all 0.3s ease 0s;
+}
+.box54:hover .box54-icons{
+    transform: perspective(400px) rotateY(0deg);
+}
+.box54 .social-links54{
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+.box54 .social-links54 li{
+    list-style: none;
+}
+.box54 .social-links54 li a{
+    display: block;
+    background: #fff;
+    color: #a1a1a1;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.box54 .social-links54 li a:hover{
+    color:#fff;
+}
+.box54 .social-links54 li .fa-facebook:hover{
+    background: #365899;
+}
+.box54 .social-links54 li .fa-google:hover{
+    background: #ea4335;
+}
+.box54 .social-links54 li .fa-twitter:hover{
+    background: #00aced;
+}
+.box54 .social-links54 li .fa-instagram:hover{
+    background: #458eff;
+}
+.box54 .social-links54 li .fa-pinterest:hover{
+    background:   #c90000;
+}
+.box54 .social-links54 li .fa-linkedin:hover{
+    background: #0077b5;
+}
+.box54 .social-links54 li .fa-youtube:hover{
+    background: #d62424;
+}
+@media only screen and (max-width:1200px){
+    .box54 .social-links54 li a{ padding:9px; }
+}
+@media only screen and (max-width: 990px) {
+    .box54{ margin-bottom:15px; }
+}
+@media only screen and (max-width: 359px) {
+    .box54 .social-links54 li a{ padding:8px; }
+}

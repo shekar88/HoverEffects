@@ -1,0 +1,104 @@
+.box23{
+    overflow: hidden;
+    box23-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: relative;
+}
+.box23 img{
+    width: 100%;
+    height: auto;
+}
+.box23 .box23-content{
+    padding: 25% 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.box23:hover .box23-content{ opacity: 1; }
+.box23:before,
+.box23:after,
+.box23 .box23-content:before,
+.box23 .box23-content:after{
+    content: "";
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.box23:after{ top: 50%; }
+.box23 .box23-content:before,
+.box23 .box23-content:after{
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+.box23 .box23-content:after{ top: 50%; }
+.box23:hover:before{
+    left: 50%;
+    opacity: 1;
+}
+.box23:hover:after{
+    top: 0;
+    opacity: 1;
+}
+.box23:hover .box23-content:before{
+    top: 50%;
+    opacity: 1;
+}
+.box23:hover .box23-content:after{
+    left: 0;
+    opacity: 1;
+}
+.box23 .title23{
+    font-size: 26px;
+    font-style: italic;
+    color: #ffd700;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.box23 .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+.box23 .icon23{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box23 .icon23 li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.box23 .icon23 a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15%;
+    background: #fff;
+    font-size: 15px;
+    color: #2d2c2c;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.box23 .icon23 a:hover{
+    background: transparent;
+    color: #fff;
+    border-radius: 50%;
+    box23-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+}
+@media only screen and (max-width:990px){
+    .box23{ margin-bottom: 30px; }
+}

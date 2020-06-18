@@ -1,0 +1,78 @@
+.box34{
+    text-align: center;
+    box34-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: relative;
+}
+.box34 img{
+    width: 100%;
+    height: auto;
+}
+.box34 .box34-content{
+    padding-top: 15%;
+    border: 1px solid #fff;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.5s ease 0s;
+}
+.box34:hover .box34-content{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.box34 .title34{
+    font-size: 22px;
+    font-weight: 700;
+    color: #da2d5b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.box34 .post34{
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.box34 .icon34{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box34 .icon34 li{ display: inline-block; }
+.box34 .icon34 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+    position: relative;
+}
+.box34 .icon34 li a:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.box34 .icon34 li a:hover:before{
+    border: #da2d5b;
+    background: #da2d5b;
+    transform: rotate(180deg);
+}
+@media only screen and (max-width:990px){
+    .box34{ margin-bottom: 30px; }
+}

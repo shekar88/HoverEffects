@@ -1,0 +1,116 @@
+.demo27{ background: #d9d9d9; }
+.box27{
+    overflow: hidden;
+    position: relative;
+}
+.box27 img{
+    width: 100%;
+    height: auto;
+}
+.box27 .box27-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0.5s;
+}
+.box27:before,
+.box27:after,
+.box27 .box27-content:before,
+.box27 .box27-content:after,
+.box27 .box27-overlay{
+    content: "";
+    width: 20%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s ease 0.1s;
+}
+.box27:after{
+    left: 20%;
+    transition-delay: 0.2s;
+}
+.box27 .box27-content:before{
+    left: 40%;
+    transition-delay: 0.3s;
+}
+.box27 .box27-content:after{
+    left: 60%;
+    transition-delay: 0.4s;
+}
+.box27 .box27-overlay{
+    left: 80%;
+    transition-delay: 0.5s;
+}
+.box27:hover:before,
+.box27:hover:after,
+.box27:hover .box27-content:before,
+.box27:hover .box27-content:after,
+.box27:hover .box27-overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.box27 .inner-content27{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: all 0.3s ease 0.5s;
+}
+.box27:hover .inner-content27{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+.box27 .title27{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.box27 .post27{
+    display: inline-block;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 5px 0 20px 0;
+}
+.box27 .icon27{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box27 .icon27 li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.box27 .icon27 li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    border-radius: 50% 0;
+    background: #8421ef;
+    font-size: 18px;
+    color: #fff;
+    box27-shadow: 0 0 0 2px rgba(0,0,0,0.5),0 0 0 4px rgba(255,255,255,0.8);
+    transition: all 0.3s ease 0s;
+}
+.box27 .icon27 li a:hover{
+    background: #fff;
+    color: #8421ef;
+    box27-shadow: 0 0 15px rgba(0,0,0,0.5) inset,0 0 10px #fff;
+}
+@media only screen and (max-width:990px){
+    .box27{ margin-bottom: 30px; }
+}

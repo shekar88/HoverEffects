@@ -1,0 +1,115 @@
+.box32{
+    text-align: center;
+    overflow: hidden;
+    box32-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: relative;
+}
+.box32:before,
+.box32:after{
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transition: all 0.3s ease-in-out;
+}
+.box32:after{
+    top: auto;
+    left: auto;
+    bottom: 5%;
+    right: 5%;
+}
+.box32:hover:before,
+.box32:hover:after{
+    width: 90%;
+    height: 90%;
+}
+.box32 img{
+    width: 100%;
+    height: auto;
+}
+.box32 .box32-content{
+    width: 100%;
+    height: 100%;
+    padding-top: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.2s ease 0.3s;
+}
+.box32:hover .box32-content{ opacity: 1; }
+.box32 .box32-content:before,
+.box32 .box32-content:after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translateY(-50%) translateX(-50%);
+    transition: all 0.3s ease 0s;
+}
+.box32 .box32-content:before{ width: 0; }
+.box32 .box32-content:after{ height: 0; }
+.box32:hover .box32-content:before{
+    width: 85%;
+    border-top: 2px solid #3dbbff;
+    border-bottom: 2px solid #3dbbff;
+    transition-delay: 0.4s;
+}
+.box32:hover .box32-content:after{
+    height: 85%;
+    border-left: 2px solid #3dbbff;
+    border-right: 2px solid #3dbbff;
+    transition-delay: 0.4s;
+}
+.box32 .title32{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3dbbff;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    margin: 0 0 10px;
+}
+.box32 .post32{
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.box32 .icon32{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+.box32 .icon32 li{ display: inline-block; }
+.box32 .icon32 a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15%;
+    background: #fff;
+    font-size: 15px;
+    color: #2d2c2c;
+    text-align: center;
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+.box32 .icon32 a:hover{
+    background: transparent;
+    color: #3dbbff;
+    border-radius: 50%;
+    box32-shadow: 1px 1px 3px #3dbbff, -1px -1px 3px #3dbbff;
+}
+@media only screen and (max-width:990px){
+    .box32{ margin-bottom: 30px; }
+}

@@ -1,0 +1,205 @@
+.box41{
+    overflow: hidden;
+    position: relative;
+}
+.box41 img{
+    width: 100%;
+    height: auto;
+}
+.box41 .box41-layer{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255,255,255,0.7);
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.2s linear 0s;
+}
+.box41:hover .box41-layer{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.box41 .box41-icon{
+    font-size: 30px;
+    color: #383636;
+    opacity: 1;
+    transition: all 0.01s linear 0.2s;
+}
+.box41:hover .box41-icon{
+    opacity: 0;
+    transition-delay: 0s;
+}
+.box41 .border-outer41{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    transition: all 0.01s linear 0s;
+}
+.box41 .box41-inner{
+    background: #383636;
+    position: absolute;
+    transition: all 0.3s linear 0s;
+}
+.box41 .border-outer41 .top{
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+.box41 .border-outer41 .left{
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+}
+.box41 .border-outer41 .bottom{
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+}
+.box41 .border-outer41 .right{
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+}
+.box41 .border-inner41{
+    width: 88%;
+    height: 88%;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    opacity: 0;
+    transition: all 0.01s linear 0s;
+}
+.box41 .border-inner41 .top{
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+}
+.box41 .border-inner41 .left{
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+}
+.box41 .border-inner41 .bottom{
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+.box41 .border-inner41 .right{
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+}
+.box41:hover .top,
+.box41:hover .bottom{
+    width: 100%;
+    transition-delay: 0.2s;
+}
+.box41:hover .left,
+.box41:hover .right{
+    height: 100%;
+    transition-delay: 0.2s;
+}
+.box41 .box41-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box41 .title41{
+    width: 80%;
+    padding: 6px 0;
+    margin: 21% auto 0;
+    background: rgba(0,0,0,0.8);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    opacity: 0;
+    transition: all 0.2s linear 0s;
+}
+.box41:hover .title41{
+    transition-delay: 0.75s;
+}
+.box41 .title41:before{
+    content: "";
+    display: block;
+    border: 20px solid transparent;
+    border-top: 20px solid rgba(0,0,0,0.8);
+    position: absolute;
+    top: 100%;
+    left: 42%;
+}
+.box41 .description41{
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    background: rgba(0,0,0,0.8);
+    padding: 6px 10px;
+    margin: 40px auto 0;
+    opacity: 0;
+    transition: all 0.2s linear 0s;
+}
+.box41:hover .description41{
+    transition-delay: 0.65s;
+}
+.box41 .read-more41{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px 20px;
+    margin: 30px auto 0;
+    background: #1b667f;
+    border-radius: 5px;
+    box41-shadow: inset 0 0 7px 1px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all 0.2s linear 0s;
+}
+.box41:hover .read-more41{
+    transition-delay: 0.55s;
+}
+.box41:hover .border-outer41,
+.box41:hover .border-inner41,
+.box41:hover .title41,
+.box41:hover .description41,
+.box41:hover .read-more41{
+    opacity: 1;
+}
+@media only screen and (max-width: 990px){
+    .box41{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 479px){
+    .box41 .title41{ margin-top: 12%; }
+    .box41 .description41{ margin-top: 20px; }
+    .box41 .border-outer41{
+        width: 92%;
+        height: 92%;
+        top: 4%;
+        left: 4%;
+    }
+    .box41 .title41:before{
+        border: 10px solid transparent;
+        border-top: 10px solid rgba(0,0,0,0.8);
+    }
+}

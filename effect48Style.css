@@ -1,0 +1,73 @@
+.box48{
+    position: relative;
+    overflow: hidden;
+}
+.box48 img{
+    width: 100%;
+    height: auto;
+}
+.box48 .box48-content48{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.box48:hover .box48-content48{
+    transform: translateY(0);
+    opacity: 1;
+}
+.box48 .content48{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box48-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3) inset;
+    padding: 22% 10%;
+    transform: scale(0.4,0.4);
+    transition: all 0.35s ease-in-out 0.6s;
+}
+.box48:hover .content48{
+    transform: scale(1,1);
+}
+.box48 .title48{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.box48 .title48:after{
+    content48: "";
+    display: block;
+    width: 50%;
+    border-bottom: 1px solid #fff;
+    margin: 10px auto;
+}
+.box48 .description48{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+.box48 .read{
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius:  20px 0 20px 0;
+    transition: all 0.4s ease 0s;
+}
+.box48 .read:hover{
+    text-decoration: none;
+    border-radius: 0 20px 0 20px;
+}
+@media screen and (max-width:990px){
+    .box48{ margin-bottom:20px; }
+}
+@media screen and (max-width:360px){
+    .box48 .content48{ padding: 15% 10%; }
+}

@@ -1,0 +1,110 @@
+.box38{
+    overflow: hidden;
+    position: relative;
+}
+.box38:before{
+    content: "";
+    display: block;
+    border: 30px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    opacity: 1;
+    z-index: 2;
+    transition: all 1s ease 0s;
+}
+.box38:hover:before{ border: 1px solid rgba(255, 255, 255, 0.18); }
+.box38:after{
+    content: "";
+    display: block;
+    border: 10px solid #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.box38:hover:after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+.box38 img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    transition: all 1s ease 0s;
+}
+.box38:hover img{ transform: scale(1); }
+.box38 .box38-content{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    bottom: 45px;
+    right: 45px;
+    opacity: 1;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+}
+.box38:hover .box38-content{
+    top: 6px;
+    left: 6px;
+    bottom: 6px;
+    right: 6px;
+}
+.box38 .box38-inner-content{
+    width: 100%;
+    padding-bottom: 20px;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.box38:hover .box38-inner-content{ opacity: 1; }
+.box38 .title38{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+.box38 .post38{
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.box38 .icon38{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box38 .icon38 li{ display: inline-block; }
+.box38 .icon38 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+.box38 .icon38 li a:hover{
+    background: #000;
+    color: #fff;
+}
+@media only screen and (max-width:990px){
+    .box38{ margin-bottom: 30px; }
+}

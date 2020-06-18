@@ -1,0 +1,94 @@
+.box28{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.box28:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    background-image: linear-gradient(45deg, transparent 0%, rgba(0,0,0,0.5) 100%);
+    background-size: 35px 35px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.3s cubic-bezier(0.815, 1.650, 0.400, 0.680);
+}
+.box28:hover:before{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+.box28 img{
+    width: 100%;
+    height: auto;
+}
+.box28 .box28-content{
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease 0s;
+}
+.box28:hover .box28-content{
+    opacity: 1;
+    transform: scale(1);
+}
+.box28 .title28{
+    font-size: 22px;
+    font-weight: 600;
+    color: #18dd64;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px #000;
+    margin: 0 0 5px 0;
+}
+.box28 .post28{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.box28 .icon28{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease 0s;
+}
+.box28:hover .icon28{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+.box28 .icon28 li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.box28 .icon28 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    border-radius: 50%;
+    background: #18dd64;
+    font-size: 19px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.box28 .icon28 li a:hover{
+    background: #fff;
+    color: #18dd64;
+    box28-shadow: 0 0 0 5px #18dd64 inset, 0 0 10px #fff;
+}
+@media only screen and (max-width:990px){
+    .box28{ margin-bottom: 30px; }
+}

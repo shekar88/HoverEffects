@@ -1,0 +1,81 @@
+.box39{ position: relative; }
+.box39:before,
+.box39:after{
+    content: "";
+    width: 90%;
+    height: 90%;
+    background: rgba(36, 50, 86, 0.3);
+    border-top: 2px solid #243256;
+    border-left: 2px solid #243256;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: scale(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+}
+.box39:after{
+    border-bottom: 2px solid #243256;
+    border-right: 2px solid #243256;
+    transform-origin: 100% 100% 0;
+}
+.box39:hover:before,
+.box39:hover:after{
+    transform: scale(1);
+}
+.box39 img{
+    width: 100%;
+    height: auto;
+}
+.box39 .box39-content{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.box39:hover .box39-content{
+    opacity: 1;
+}
+.box39 .title39{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.box39 .post39{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.box39 .icon39{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box39 .icon39 li{
+    display: inline-block;
+}
+.box39 .icon39 li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
+}
+.box39 .icon39 li a:hover{
+    border-radius: 50%;
+}
+@media only screen and (max-width:990px){
+    .box39{ margin-bottom: 30px; }
+}

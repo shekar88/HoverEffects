@@ -1,0 +1,94 @@
+.box44{
+    position: relative;
+    overflow: hidden;
+    box44-shadow: 0 0 5px #555;
+}
+.box44 img{
+    width: 100%;
+    height: auto;
+}
+.box44 .box44-heading{
+    width: 90%;
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    background: rgba(7, 185, 244,0.8);
+    padding: 10px 60px 10px 25px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.box44:hover .box44-heading{
+    left: 100%;
+}
+.box44 .box44-heading:after{
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    background: #20211c;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.box44 .title44{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.box44 .post44{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+.box44 .boxContent44{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    padding: 30px 35px;
+    background: rgba(7, 185, 244,0.8);
+    transition: all 0.3s ease 0s;
+}
+.box44:hover .boxContent44{
+    left: 0;
+}
+.box44 .description44{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+.box44 .read44{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #20211c;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+.box44 .read44:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #3fc9f7;
+}
+.box44 .read44 i{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 990px){
+    .box44{ margin-bottom: 20px; }
+}
+@media only screen and (max-width: 479px){
+    .box44 .boxContent44{ padding: 10px; }
+    .box44 .read44{ margin-top: 10px; }
+}

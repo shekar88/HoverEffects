@@ -1,0 +1,115 @@
+.box40{
+    text-align: center;
+    box40-shadow: 0 0 5px #7e7d7d;
+    position: relative;
+}
+.box40 img{
+    width: 100%;
+    height: auto;
+}
+.box40 .box40-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.box40:hover .box40-content{
+    background-color: rgba(255, 242, 242, 0.8);
+}
+.box40 .box40-content:before,
+.box40 .box40-content:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.6s ease 0.3s;
+}
+.box40 .box40-content:before{
+    border-left: 1px solid #040404;
+    border-top: 1px solid #040404;
+    top: 19px;
+    left: 19px;
+}
+.box40 .box40-content:after{
+    border-bottom: 1px solid #040404;
+    border-right: 1px solid #040404;
+    bottom: 19px;
+    right: 19px;
+}
+.box40:hover .box40-content:before,
+.box40:hover .box40-content:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.box40 .title40{
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    position: relative;
+    top: 0;
+    opacity: 0;
+    transition: all 1s ease 0.01s;
+}
+.box40:hover .title40{
+    top: 39%;
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(1, -0.53, 0.405, 1.425) 0.01s;
+}
+.box40 .title40:after{
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #040404;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 1s ease 0s;
+}
+.box40:hover .title40:after{
+    width: 80%;
+    transition: all 1s ease 0.8s;
+}
+.box40 .icon40{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(1, -0.53, 0.405, 1.425);
+    transition-delay: 0.1s;
+}
+.box40:hover .icon40{
+    bottom: 39%;
+    opacity: 1;
+}
+.box40 .icon40 li{
+    display: inline-block;
+}
+.box40 .icon40 li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #000;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.box40 .icon40 li a:hover{
+    background: #000;
+    color: #fff;
+}
+@media only screen and (max-width:990px){
+    .box40{ margin-bottom: 30px; }
+}

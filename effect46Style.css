@@ -1,0 +1,112 @@
+.demo{
+    background: #303030;
+}
+.box46{
+    position: relative;
+    overflow: hidden;
+}
+.box46:before,
+.box46:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #618136;
+    opacity: 0.5;
+    -webkit-transition: all 0.45s ease 0s;
+    transition: all 0.45s ease 0s;
+}
+.box46:before{
+    -webkit-transform: skew(30deg) translateX(-80%);
+    transform: skew(30deg) translateX(-80%);
+}
+.box46:hover:before{
+    -webkit-transform: skew(30deg) translateX(-20%);
+    transform: skew(30deg) translateX(-20%);
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.box46:after{
+    -webkit-transform: skew(-30deg) translateX(-70%);
+    transform: skew(-30deg) translateX(-70%);
+}
+.box46:hover:after{
+    -webkit-transform: skew(-30deg) translateX(-10%);
+    transform: skew(-30deg) translateX(-10%);
+}
+.box46 img{
+    width: 100%;
+    height: auto;
+}
+.box46 .box46-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px 40% 20px 20px;
+}
+.box46 .box46-content:before,
+.box46 .box46-content:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #618136;
+    box46-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    z-index: -1;
+    -webkit-transition: all 0.45s ease 0s;
+    transition: all 0.45s ease 0s;
+}
+.box46 .box46-content:before{
+    -webkit-transform: skew(30deg) translateX(-100%);
+    transform: skew(30deg) translateX(-100%);
+}
+.box46:hover .box46-content:before{
+    -webkit-transform: skew(30deg) translateX(-40%);
+    transform: skew(30deg) translateX(-40%);
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.box46 .box46-content:after{
+    -webkit-transform: skew(-30deg) translateX(-90%);
+    transform: skew(-30deg) translateX(-90%);
+}
+.box46:hover .box46-content:after{
+    -webkit-transform: skew(-30deg) translateX(-30%);
+    transform: skew(-30deg) translateX(-30%);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.box46 .title46{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.box46 .post46{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
+    opacity: 0;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+}
+.box46:hover .title46,
+.box46:hover .post46{
+    opacity: 0.9;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+@media only screen and (max-width: 990px){
+    .box46{ margin-bottom: 20px; }
+}
