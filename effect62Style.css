@@ -1,0 +1,92 @@
+.box62{
+    position: relative;
+    overflow: hidden;
+}
+.box62 img{
+    width: 100%;
+    height: auto;
+}
+.option62{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.option62:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border-bottom: 0px solid #fff;
+    border-left: 261px solid transparent;
+    transition: all 0.5s ease-in-out 0s;
+}
+.link62{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    position: absolute;
+    top:100%;
+    z-index: 1;
+    padding-right: 10px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.link62 a{
+    margin: 0 5px;
+    color:#695d5c;
+    font-size: 16px;
+}
+.link62 a:hover{
+    color: #3498db;
+}
+.box62:hover .option62:after{
+    border-bottom: 90px solid #fff;
+    border-left: 261px solid transparent;
+}
+.box62:hover .link62{
+    top:80%;
+}
+@media only screen and (max-width: 990px){
+    .box62{
+        margin-bottom: 20px;
+    }
+    .option62:after{
+        border-bottom-width: 0px;
+        border-left-width: 351px;
+    }
+    .box62:hover .option62:after {
+        border-bottom-width: 100px;
+        border-left-width: 351px ;
+    }
+}
+@media only screen and (max-width: 767px){
+    .option62:after{
+        border-bottom: 0px solid #fff;
+        border-left-width: 730px;
+    }
+    .box62:hover .option62:after {
+        border-bottom-width: 100px;
+        border-left-width: 730px;
+    }
+    .box62:hover .link62{
+        top:90%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .option62:after{
+        border-bottom: 0px solid #fff;
+        border-left-width: 461px;
+    }
+    .box62:hover .option62:after {
+        border-bottom: 110px solid #ffffff;
+        border-left-width: 461px;
+    }
+    .box62:hover .link62{
+        top:85%;
+    }
+}
